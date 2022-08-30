@@ -16,7 +16,8 @@ export const styles = {
 export default function Dashboard() {
   const history = useHistory();
   const [isActive, setIsActive] = useState(false);
-  const img = "http://localhost:8887/259ed490-1527-4d5b-b8cb-fb4a010ad389.webp";
+  const img =
+    "http://localhost/public/assets/259ed490-1527-4d5b-b8cb-fb4a010ad389.webp";
 
   return (
     <div

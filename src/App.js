@@ -2,6 +2,7 @@ import { Component, React } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
+import Sound from "react-sound";
 import Champion from "./Pages/Champion";
 import Congratulations from "./Pages/Congratulations";
 import Dashboard from "./Pages/Dashboard/index";
@@ -9,7 +10,7 @@ import Entra from "./Pages/Entra";
 export default class App extends Component {
   constructor(props) {
     super(props);
-    const path = "http://localhost:8887";
+    const path = "http://localhost/public/assets/";
     const images = [
       `${path}/299738954_625486022415416_3985827845209104212_n.jpg`,
       `${path}/300261350_1399210487245547_5782722407586582506_n.jpg`,
@@ -55,10 +56,10 @@ export default class App extends Component {
         className="App"
         style={{
           backgroundImage: urlString,
-
           backgroundSize: "contain",
         }}
       >
+        <Sound url="cool_sound.mp3" playStatus={Sound.status.PLAYING} />
         <Router>
           <Switch>
             <Route exact path="/" component={Entra} />
