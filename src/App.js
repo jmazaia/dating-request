@@ -2,7 +2,6 @@ import { Component, React } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
-import Sound from "react-sound";
 import Champion from "./Pages/Champion";
 import Congratulations from "./Pages/Congratulations";
 import Dashboard from "./Pages/Dashboard/index";
@@ -60,7 +59,6 @@ export default class App extends Component {
           backgroundSize: "contain",
         }}
       >
-        <Sound url="cool_sound.mp3" playStatus={Sound.status.PLAYING} />
         <Router>
           <Switch>
             <Route exact path="/" component={Entra} />

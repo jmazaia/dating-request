@@ -6,6 +6,13 @@ import { styles } from "./Dashboard/index";
 
 function Entra() {
   const history = useHistory();
+
+  function play() {
+    new Audio(
+      "https://github.com/jmazaia/dating-request/blob/master/public/X2Download.com%20-%20Home%20-%20Edith%20Whiskers%20(TikTok)%20(Tradu%C3%A7%C3%A3o_Legendado)%20(128%20kbps).mp3?raw=true"
+    ).play();
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -32,6 +39,7 @@ function Entra() {
               className="button"
               onClick={() => {
                 history.push("/Congratulations");
+                play();
               }}
             >
               <span>Entre</span>
