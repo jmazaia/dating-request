@@ -11,7 +11,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     const path =
-      "https://raw.githubusercontent.com/jmazaia/dating-request/master/public/assets/";
+      "https://raw.githubusercontent.com/jmazaia/dating-request/master/public/assets/259ed490-1527-4d5b-b8cb-fb4a010ad389.webp";
     const images = [
       `${path}/299738954_625486022415416_3985827845209104212_n.jpg`,
       `${path}/300261350_1399210487245547_5782722407586582506_n.jpg`,
