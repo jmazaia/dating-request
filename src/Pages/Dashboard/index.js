@@ -17,7 +17,7 @@ export default function Dashboard() {
   const history = useHistory();
   const [isActive, setIsActive] = useState(false);
   const img =
-    "http://localhost/public/assets/259ed490-1527-4d5b-b8cb-fb4a010ad389.webp";
+    "https://raw.githubusercontent.com/jmazaia/dating-request/master/public/assets/";
 
   return (
     <div

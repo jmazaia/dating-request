@@ -10,7 +10,8 @@ import Entra from "./Pages/Entra";
 export default class App extends Component {
   constructor(props) {
     super(props);
-    const path = "http://localhost/public/assets/";
+    const path =
+      "https://raw.githubusercontent.com/jmazaia/dating-request/master/public/assets/";
     const images = [
       `${path}/299738954_625486022415416_3985827845209104212_n.jpg`,
       `${path}/300261350_1399210487245547_5782722407586582506_n.jpg`,
